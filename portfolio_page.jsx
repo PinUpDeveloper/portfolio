@@ -274,7 +274,7 @@ export default function Portfolio() {
                 </div>
                 <div>
                   <h1 style={{ margin: 0, fontSize: 20, fontWeight: 600, color: "#fff", letterSpacing: "-0.02em" }}>Marsel Tazhibayev</h1>
-                  <p style={{ margin: "1px 0 0", fontSize: 12, color: "rgba(255,255,255,0.4)", fontFamily: "'JetBrains Mono', monospace" }}>@biwvarmak</p>
+                  <p style={{ margin: "1px 0 0", fontSize: 12, color: "rgba(255,255,255,0.4)", fontFamily: "'JetBrains Mono', monospace" }}>@biwbarmak</p>
                 </div>
               </div>
 
