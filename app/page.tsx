@@ -238,31 +238,46 @@ function CodeMock() {
         fontSize: 11,
         lineHeight: 1.75,
         border: "1px solid rgba(255,255,255,0.06)",
+        color: "#f8f8f2", // фикс
       }}
     >
-      <div style={{ color: "rgba(255,255,255,0.22)", marginBottom: 4 }}>// worker.go</div>
+      <div style={{ color: "rgba(255,255,255,0.22)", marginBottom: 4 }}>
+        // worker.go
+      </div>
+
       <div>
         <span style={{ color: "#ff79c6" }}>func</span>{" "}
         <span style={{ color: "#50fa7b" }}>ProcessTask</span>
-        <span style={{ color: "#f8f8f2" }}>(</span>
+        <span>(</span>
         <span style={{ color: "#ffb86c" }}>ch</span>{" "}
-        <span style={{ color: "#8be9fd" }}>&lt;-chan</span> Task
-        <span style={{ color: "#f8f8f2" }}>)</span> {"{"}
+        <span style={{ color: "#8be9fd" }}>&lt;-chan</span>{" "}
+        <span>Task</span>
+        <span>)</span> {"{"}
       </div>
+
       <div style={{ paddingLeft: 16 }}>
         <span style={{ color: "#ff79c6" }}>go</span>{" "}
         <span style={{ color: "#ff79c6" }}>func</span>() {"{"}
       </div>
+
       <div style={{ paddingLeft: 32 }}>
-        <span style={{ color: "#ff79c6" }}>for</span> task :={" "}
-        <span style={{ color: "#ff79c6" }}>range</span> ch {"{"}
+        <span style={{ color: "#ff79c6" }}>for</span>{" "}
+        <span>task</span> :={" "}
+        <span style={{ color: "#ff79c6" }}>range</span>{" "}
+        <span>ch</span> {"{"}
       </div>
+
       <div style={{ paddingLeft: 48 }}>
-        <span style={{ color: "#50fa7b" }}>handle</span>(task.ID)
+        <span style={{ color: "#50fa7b" }}>handle</span>
+        <span>(</span>
+        <span>task.ID</span>
+        <span>)</span>
       </div>
+
       <div style={{ paddingLeft: 32 }}>{"}"}</div>
       <div style={{ paddingLeft: 16 }}>{"}"} ()</div>
       <div>{"}"}</div>
+
       <div
         style={{
           marginTop: 8,
@@ -275,8 +290,10 @@ function CodeMock() {
       >
         <span style={{ color: "#50fa7b" }}>✓</span>{" "}
         <span style={{ color: "rgba(255,255,255,0.4)" }}>Task</span>{" "}
-        <span style={{ color: "#f8f8f2", fontWeight: 600 }}>tid_7f3a2</span>{" "}
-        <span style={{ color: "rgba(255,255,255,0.28)" }}>queued → non-blocking</span>
+        <span style={{ fontWeight: 600 }}>tid_7f3a2</span>{" "}
+        <span style={{ color: "rgba(255,255,255,0.28)" }}>
+          queued → non-blocking
+        </span>
       </div>
     </div>
   );
