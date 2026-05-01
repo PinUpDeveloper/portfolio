@@ -720,7 +720,7 @@ export default function Portfolio() {
           </div>
 
           <p style={{ textAlign: "center", marginTop: 40, fontSize: 10.5, color: "rgba(255,255,255,0.13)", fontFamily: "'JetBrains Mono', monospace" }}>
-            © 2025 Marsel Tazhibayev · Next.js + Tailwind · Astana, KZ
+            © 2026 Marsel Tazhibayev
           </p>
         </div>
       </div>
