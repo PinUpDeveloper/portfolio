@@ -242,7 +242,7 @@ function CodeMock() {
       }}
     >
       <div style={{ color: "rgba(255,255,255,0.22)", marginBottom: 4 }}>
-        // worker.go
+      {"// worker.go"}
       </div>
 
       <div>
